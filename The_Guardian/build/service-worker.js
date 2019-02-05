@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/AJS_CA1/The_Guardian/precache-manifest.96b104fd7e93c9d4283fd52ad5fb9267.js"
+  "/AJS_CA1/precache-manifest.6125c043cd9c3498dab1178ebeb615db.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/AJS_CA1/The_Guardian/index.html", {
+workbox.routing.registerNavigationRoute("/AJS_CA1/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
