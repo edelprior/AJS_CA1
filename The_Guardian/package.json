@@ -2,7 +2,7 @@
   "name": "github-pages",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://edelprior.github.io/AJS_CA1/The_Guardian",
+  "homepage": "https://edelprior.github.io/AJS_CA1/",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "axios": "^0.18.0",
