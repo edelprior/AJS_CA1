@@ -1,9 +1,15 @@
 import React from "react";
-import NewsCard from "../Components/NewsCard";
-import LabelledInput from "../Components/LabelledInput";
-import DropDown from "../Components/DropDown";
+import NewsCard from "./Components/NewsCard";
+import SearchBar from "./Components/SearchBar";
+import Selector from "./Components/Selector";
 import axios from "axios";
+// eslint-disable-next-line
+{
+  /*
+  Import the Components to be used building the class.
 
+  */
+}
 class Article extends React.Component {
   constructor() {
     super();
@@ -61,15 +67,15 @@ class Article extends React.Component {
     });
     return (
       <div>
-        <div className="column is-6">
-          <DropDown
+        <div className="column is-8">
+          <Selector
             options={["All", "News", "Sport", "Arts", "Opinion", "Lifestyle"]}
             handleChange={this.handleChange}
             label="Filter by Section"
             name="sectionSelected"
             selected={this.state.sectionSelected}
           />
-          <LabelledInput
+          <SearchBar
             name="searchText"
             label="Search by Title"
             value={this.state.searchText}

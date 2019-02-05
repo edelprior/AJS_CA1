@@ -1,9 +1,18 @@
 import React from "react";
 import NewsCard from "../Components/NewsCard";
-import LabelledInput from "../Components/LabelledInput";
-import DropDown from "../Components/DropDown";
+import SearchBar from "../Components/SearchBar";
+import Selector from "../Components/Selector";
 import axios from "axios";
-
+import PropTypes from "prop-types";
+// eslint-disable-next-line
+{
+  /*
+  Import the Components to be used building the class.
+  With the Router this can be desribed as a "page" in the application.
+  Below JSX defines and builds the component to be displayed
+  on the screen when the class is called.
+  */
+}
 class Thatcher extends React.Component {
   constructor() {
     super();
@@ -19,9 +28,6 @@ class Thatcher extends React.Component {
     axios
       .get(
         "https://content.guardianapis.com/search?q=thatcher&api-key=b21e1e64-196e-4742-b2b9-5d8ebdbdf57d"
-        //"https://content.guardianapis.com/search?api-key=b21e1e64-196e-4742-b2b9-5d8ebdbdf57d"
-        //  "https://content.guardianapis.com/tags?q=brexit&api-key=b21e1e64-196e-4742-b2b9-5d8ebdbdf57d"
-        //"https://content.guardianapis.com/search?api-key=b21e1e64-196e-4742-b2b9-5d8ebdbdf57d"
       )
       .then(responseArray => {
         this.setState({
@@ -63,8 +69,8 @@ class Thatcher extends React.Component {
     });
     return (
       <div>
-        <div className="column is-6">
-          <DropDown
+        <div className="column is-12">
+          <Selector
             options={[
               "All",
               "Evil",
@@ -78,12 +84,12 @@ class Thatcher extends React.Component {
             name="sectionSelected"
             selected={this.state.sectionSelected}
           />
-          <LabelledInput
+          <SearchBar
             name="searchText"
             label="Search by Title"
             value={this.state.searchText}
             handleChange={this.handleChange}
-            placeholder={"e.g. Brexit"}
+            placeholder={"e.g. Witches"}
           />
         </div>
         <div className="columns is-multiline">{articleList}</div>
@@ -91,4 +97,26 @@ class Thatcher extends React.Component {
     );
   }
 }
+
+// eslint-disable-next-line
+{
+  /* Default values for Props
+  ------------------------------
+  Helps to typecheck the programme. The library displays
+  a warning in the JS console if an invalid value is provided
+  for the prop. Only used for development purposes.
+  Also provides a default set for each prop defined, so the user doesn't
+  see null as a value  */
+}
+Selector.defaultProps = {
+  sectionSelected: "Arts",
+  searchText: "",
+  placeholder: "e.g. Witches"
+};
+
+Selector.propTypes = {
+  sectionSelected: PropTypes.string,
+  searchText: PropTypes.string,
+  placeholder: PropTypes.string
+};
 export default Thatcher;

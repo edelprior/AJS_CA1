@@ -1,5 +1,5 @@
 import React from "react";
-import Article from "../Main/Article";
+import Article from "../Article";
 class Home extends React.Component {
   render() {
     return (
@@ -9,5 +9,4 @@ class Home extends React.Component {
     );
   }
 }
-
 export default Home;
