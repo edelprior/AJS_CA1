@@ -1,11 +1,11 @@
 {
-  "main.js": "/static/js/main.9b9a0a72.chunk.js",
-  "main.js.map": "/static/js/main.9b9a0a72.chunk.js.map",
-  "static/js/1.7731dbf5.chunk.js": "/static/js/1.7731dbf5.chunk.js",
-  "static/js/1.7731dbf5.chunk.js.map": "/static/js/1.7731dbf5.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.a406dc77c0ff862ec119c3c8ef8d20a4.js": "/precache-manifest.a406dc77c0ff862ec119c3c8ef8d20a4.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/AJS_CA1/The_Guardian/static/js/main.d30563bd.chunk.js",
+  "main.js.map": "/AJS_CA1/The_Guardian/static/js/main.d30563bd.chunk.js.map",
+  "static/js/1.eb2bcbd1.chunk.js": "/AJS_CA1/The_Guardian/static/js/1.eb2bcbd1.chunk.js",
+  "static/js/1.eb2bcbd1.chunk.js.map": "/AJS_CA1/The_Guardian/static/js/1.eb2bcbd1.chunk.js.map",
+  "runtime~main.js": "/AJS_CA1/The_Guardian/static/js/runtime~main.c6655f49.js",
+  "runtime~main.js.map": "/AJS_CA1/The_Guardian/static/js/runtime~main.c6655f49.js.map",
+  "index.html": "/AJS_CA1/The_Guardian/index.html",
+  "precache-manifest.96b104fd7e93c9d4283fd52ad5fb9267.js": "/AJS_CA1/The_Guardian/precache-manifest.96b104fd7e93c9d4283fd52ad5fb9267.js",
+  "service-worker.js": "/AJS_CA1/The_Guardian/service-worker.js"
 }
