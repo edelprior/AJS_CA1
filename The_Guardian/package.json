@@ -1,8 +1,10 @@
 {
-  "name": "001",
+  "name": "github-pages",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://edelprior.github.io/AJS_CA1",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "axios": "^0.18.0",
     "bulma": "^0.7.2",
     "prop-types": "^15.6.2",
@@ -12,6 +14,8 @@
     "react-scripts": "2.1.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

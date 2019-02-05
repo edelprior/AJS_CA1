@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, NavLink, BrowserRouter } from "react-router-dom";
+import { Route, NavLink, HashRouter } from "react-router-dom";
 import Home from "./Navigation/Home";
 import Thatcher from "./Navigation/Thatcher";
 import Brexit from "./Navigation/Brexit";
@@ -20,7 +20,7 @@ import Brexit from "./Navigation/Brexit";
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div className="container">
           <div className="hero is-primary">
             <div className="hero-body">
@@ -59,7 +59,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
