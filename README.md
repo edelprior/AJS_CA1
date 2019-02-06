@@ -2,7 +2,7 @@
 
 ---
 
-## Using the React front-end JS library and an API from The Guardian, giving access to the archives of content the website has, a web app was developed.
+## Using the React front-end JS library and an API from The Guardian, giving access to the archives of content the website has, a web app was developed.
 
 ---
 

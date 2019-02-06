@@ -80,7 +80,7 @@ class Article extends React.Component {
             label="Search by Title"
             value={this.state.searchText}
             handleChange={this.handleChange}
-            placeholder={"e.g. Weather"}
+            placeholder={"e.g. Sport"}
           />
         </div>
         <div className="columns is-multiline">{articleList}</div>
